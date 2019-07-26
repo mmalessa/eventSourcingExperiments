@@ -6,6 +6,7 @@
         "ext-ctype": "*",
         "ext-iconv": "*",
         "prooph/event-store": "^7.5",
+        "prooph/event-store-symfony-bundle": "^0.6.0",
         "prooph/pdo-event-store": "^1.11",
         "symfony/console": "4.3.*",
         "symfony/dotenv": "4.3.*",
