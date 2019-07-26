@@ -1,4 +1,7 @@
 {
+    "beberlei/assert": {
+        "version": "v3.2.1"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -29,6 +32,40 @@
     "doctrine/reflection": {
         "version": "v1.0.0"
     },
+    "marc-mabe/php-enum": {
+        "version": "v4.1.0"
+    },
+    "prooph/common": {
+        "version": "v4.3.0"
+    },
+    "prooph/event-store": {
+        "version": "v7.5.4"
+    },
+    "prooph/event-store-symfony-bundle": {
+        "version": "0.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "0.4",
+            "ref": "54606aa996190da9a01cd533ad66a14a37d9b92b"
+        },
+        "files": [
+            "config/packages/prooph_event_store.yaml",
+            "src/Command/CreateEventStreamCommand.php"
+        ]
+    },
+    "prooph/pdo-event-store": {
+        "version": "1.7",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.7",
+            "ref": "88c30218d5ef74ede65ae40fc8e4ec9558ec2b65"
+        },
+        "files": [
+            "config/packages/prooph_pdo_event_store.yaml"
+        ]
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
@@ -37,6 +74,9 @@
     },
     "psr/log": {
         "version": "1.1.0"
+    },
+    "ramsey/uuid": {
+        "version": "3.8.0"
     },
     "sensio/framework-extra-bundle": {
         "version": "5.2",
