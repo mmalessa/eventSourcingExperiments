@@ -17,8 +17,18 @@ services:
         resource: '../src/UI/Command'
         autowire: true
         autoconfigure: true
+        bind:
+            $commandBus: '@app.command_bus'
 
     App\Infrastructure\:
         resource: '../src/Infrastructure'
         autowire: true
         autoconfigure: true
+
+
+    app.command_bus:
+        class: App\Application\CommandBus\CommandBus
+
+    App\Application\CommandBus\TestCommandHandler:
+        tags:
+            - { name: app.command_handler }
