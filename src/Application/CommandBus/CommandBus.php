@@ -7,15 +7,15 @@ final class CommandBus
 {
     private $commandHandlers;
 
-    public function subscribe(CommandHandler $commandHandler)
+    public function subscribe($commandClass, $handlerClass)
     {
-        $this->commandHandlers[get_class($commandHandler)] = $commandHandler;
+        $this->commandHandlers[get_class($commandClass)] = $handlerClass;
     }
     public function handle($command): void
     {
         Assertion::isObject($command);
-        $handlerClassName = get_class($command) . 'Handler';
-        Assertion::keyExists($this->commandHandlers, $handlerClassName);
-        ($this->commandHandlers[$handlerClassName])->handle($command);
+        $commandClassName = get_class($command);
+        Assertion::keyExists($this->commandHandlers, $commandClassName);
+        ($this->commandHandlers[$commandClassName])->handle($command);
     }
 }

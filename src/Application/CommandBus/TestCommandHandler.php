@@ -2,10 +2,11 @@
 
 namespace App\Application\CommandBus;
 
-class TestCommandHandler implements CommandHandler
+class TestCommandHandler
 {
-    public function handle($command): void
+    public function handle(TestCommand $command): void
     {
         echo "Handle TestCommand\n";
+        print_r($command);
     }
 }

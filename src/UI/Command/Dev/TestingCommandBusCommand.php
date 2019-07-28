@@ -4,7 +4,6 @@ namespace App\UI\Command\Dev;
 
 use App\Application\CommandBus\CommandBus;
 use App\Application\CommandBus\TestCommand;
-use App\Application\CommandBus\TestCommandHandler;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
