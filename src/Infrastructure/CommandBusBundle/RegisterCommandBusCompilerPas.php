@@ -2,6 +2,7 @@
 namespace App\Infrastructure\CommandBusBundle;
 
 use ReflectionClass;
+use InvalidArgumentException;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;
@@ -29,6 +30,11 @@ class RegisterCommandBusCompilerPas implements CompilerPassInterface
             $serviceDefinition = $container->getDefinition($serviceId);
             $handlerClass = $container->getParameterBag()->resolveValue($serviceDefinition->getClass());
             $reflectionClass = new ReflectionClass($handlerClass);
+            if (!$reflectionClass->hasMethod('handle')) {
+                throw new InvalidArgumentException(
+                    sprintf('There must be a "handle" method in the "%s" service.', $serviceId)
+                );
+            }
             $commandClass = $reflectionClass->getMethod('handle')->getParameters()[0]->getClass()->getName();
             $busServiceDefinition->addMethodCall('subscribe', [new Reference($commandClass), new Reference($handlerClass)]);
         }
