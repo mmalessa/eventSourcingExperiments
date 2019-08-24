@@ -17,8 +17,6 @@ services:
         resource: '../src/UI/Command'
         autowire: true
         autoconfigure: true
-#        bind:
-#            $commandBus: '@mmalessa.command_bus'
 
     App\Infrastructure\:
         resource: '../src/Infrastructure'
