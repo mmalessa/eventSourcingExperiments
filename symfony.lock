@@ -1,9 +1,18 @@
 {
-    "beberlei/assert": {
-        "version": "v3.2.1"
-    },
     "marc-mabe/php-enum": {
         "version": "v4.1.0"
+    },
+    "mmalessa/command-bus": {
+        "version": "v1.0"
+    },
+    "mmalessa/command-bus-bundle": {
+        "version": "v1.0"
+    },
+    "mmalessa/commandbus": {
+        "version": "0.0.1"
+    },
+    "mmalessa/commandbus-bundle": {
+        "version": "0.0.1"
     },
     "prooph/common": {
         "version": "v4.3.0"

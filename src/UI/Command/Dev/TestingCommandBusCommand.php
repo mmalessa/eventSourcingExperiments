@@ -2,7 +2,7 @@
 
 namespace App\UI\Command\Dev;
 
-use App\Application\CommandBus\CommandBus;
+use Mmalessa\CommandBus\CommandBus;
 use App\Application\CommandBus\TestCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -21,6 +21,6 @@ class TestingCommandBusCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $this->commandBus->handle(new TestCommand());
+        $this->commandBus->handle(TestCommand::create(1, 'Zosia'));
     }
 }

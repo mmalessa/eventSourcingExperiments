@@ -7,6 +7,7 @@ class TestCommandHandler
     public function handle(TestCommand $command): void
     {
         echo "Handle TestCommand\n";
-        print_r($command);
+        printf ("ID: %s\n", $command->payload('id'));
+        printf("Name: %s\n", $command->payload('name'));
     }
 }
