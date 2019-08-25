@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "mmalessa/command-bus",
-            "version": "v1.0",
+            "version": "v1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mmalessa/command-bus.git",
-                "reference": "4a8b2793ae5a0e24499eb398b47546481dcd1c27"
+                "reference": "8f47171966b39c4e8ae7328f75c0c166178986b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mmalessa/command-bus/zipball/4a8b2793ae5a0e24499eb398b47546481dcd1c27",
-                "reference": "4a8b2793ae5a0e24499eb398b47546481dcd1c27",
+                "url": "https://api.github.com/repos/mmalessa/command-bus/zipball/8f47171966b39c4e8ae7328f75c0c166178986b1",
+                "reference": "8f47171966b39c4e8ae7328f75c0c166178986b1",
                 "shasum": ""
             },
             "require": {
@@ -45,24 +45,24 @@
                 "command bus",
                 "command-bus"
             ],
-            "time": "2019-08-24T22:11:21+00:00"
+            "time": "2019-08-25T09:02:36+00:00"
         },
         {
             "name": "mmalessa/command-bus-bundle",
-            "version": "v1.0",
+            "version": "v1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mmalessa/command-bus-bundle.git",
-                "reference": "b1c8b5a23bdaabd50af11a14a4d5657817128517"
+                "reference": "904a748ed6bcfb8469dd65be5b7f6363646258b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mmalessa/command-bus-bundle/zipball/b1c8b5a23bdaabd50af11a14a4d5657817128517",
-                "reference": "b1c8b5a23bdaabd50af11a14a4d5657817128517",
+                "url": "https://api.github.com/repos/mmalessa/command-bus-bundle/zipball/904a748ed6bcfb8469dd65be5b7f6363646258b6",
+                "reference": "904a748ed6bcfb8469dd65be5b7f6363646258b6",
                 "shasum": ""
             },
             "require": {
-                "mmalessa/command-bus": "^1.0",
+                "mmalessa/command-bus": "^1.1",
                 "php": ">=7.2",
                 "symfony/framework-bundle": "4.3.*"
             },
@@ -89,7 +89,7 @@
                 "command bus bundle",
                 "command-bus"
             ],
-            "time": "2019-08-24T23:11:14+00:00"
+            "time": "2019-08-25T09:15:47+00:00"
         },
         {
             "name": "psr/cache",

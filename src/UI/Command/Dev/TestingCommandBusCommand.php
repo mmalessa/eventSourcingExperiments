@@ -21,6 +21,6 @@ class TestingCommandBusCommand extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $this->commandBus->handle(TestCommand::create(1, 'Zosia'));
+        $this->commandBus->handle(TestCommand::create(1, 'Silifon'));
     }
 }
